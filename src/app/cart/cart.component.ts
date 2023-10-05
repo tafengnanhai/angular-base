@@ -3,13 +3,14 @@ import { Product } from '../products';
 import { CartService } from '../cart.service';
 import { NgFor, CurrencyPipe } from '@angular/common';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss'],
   standalone: true,
-  imports: [NgFor, CurrencyPipe, ReactiveFormsModule],
+  imports: [NgFor, CurrencyPipe, ReactiveFormsModule, RouterLink],
 })
 export class CartComponent {
   cartService = inject(CartService);
@@ -23,7 +24,7 @@ export class CartComponent {
   onSubmit() {
     this.cartService.clearCart();
     window.alert(
-      'Success:' + this.formData.value.name + ',' + this.formData.value. address
+      'Success:' + this.formData.value.name + ',' + this.formData.value.address
     );
     this.formData.reset();
   }
