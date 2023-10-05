@@ -23,7 +23,7 @@ export class CartComponent {
   onSubmit() {
     this.cartService.clearCart();
     window.alert(
-      'Success:' + this.formData.value.name + ',' + this.formData.value.address
+      'Success:' + this.formData.value.name + ',' + this.formData.value. address
     );
     this.formData.reset();
   }
