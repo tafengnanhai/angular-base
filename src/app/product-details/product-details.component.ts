@@ -5,11 +5,11 @@ import { CartService } from '../cart.service';
 import { NgIf, CurrencyPipe } from '@angular/common';
 
 @Component({
-    selector: 'app-product-details',
-    templateUrl: './product-details.component.html',
-    styleUrls: ['./product-details.component.css'],
-    standalone: true,
-    imports: [NgIf, CurrencyPipe],
+  selector: 'app-product-details',
+  templateUrl: './product-details.component.html',
+  styleUrls: ['./product-details.component.scss'],
+  standalone: true,
+  imports: [NgIf, CurrencyPipe],
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product | undefined;

@@ -6,16 +6,11 @@ import { RouterLink } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common';
 
 @Component({
-    selector: 'app-product-list',
-    templateUrl: './product-list.component.html',
-    styleUrls: ['./product-list.component.css'],
-    standalone: true,
-    imports: [
-        NgFor,
-        RouterLink,
-        NgIf,
-        ProductAlertsComponent,
-    ],
+  selector: 'app-product-list',
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.scss'],
+  standalone: true,
+  imports: [NgFor, RouterLink, NgIf, ProductAlertsComponent],
 })
 export class ProductListComponent {
   products = [...products];

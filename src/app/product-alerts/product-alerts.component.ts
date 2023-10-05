@@ -3,11 +3,11 @@ import { Product } from '../products';
 import { NgIf } from '@angular/common';
 
 @Component({
-    selector: 'app-product-alerts',
-    templateUrl: './product-alerts.component.html',
-    styleUrls: ['./product-alerts.component.css'],
-    standalone: true,
-    imports: [NgIf],
+  selector: 'app-product-alerts',
+  templateUrl: './product-alerts.component.html',
+  styleUrls: ['./product-alerts.component.scss'],
+  standalone: true,
+  imports: [NgIf],
 })
 export class ProductAlertsComponent {
   @Input() product: Product | undefined;
